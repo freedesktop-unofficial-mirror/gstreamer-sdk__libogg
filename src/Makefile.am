@@ -9,7 +9,7 @@ libogg_la_LDFLAGS = -no-undefined -version-info @LIB_CURRENT@:@LIB_REVISION@:@LI
 
 # build and run the self tests on 'make check'
 
-noinst_PROGRAMS = test_bitwise test_framing
+check_PROGRAMS = test_bitwise test_framing
 
 test_bitwise_SOURCES = bitwise.c
 test_bitwise_CFLAGS = -D_V_SELFTEST
